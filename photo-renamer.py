@@ -25,7 +25,7 @@ reg_compile = re.compile("^\d{8}$")
 for dirpath, dirnames, filenames in os.walk(path_name):
     dirs_to_process = dirs_to_process + [dirname for dirname in dirnames if  reg_compile.match(dirname)]
 
-i = 0
+i = 0 # i'm skeeeered, davy
 for dir in dirs_to_process:
     # print(dir)
     os.chdir(path_name + dir)
